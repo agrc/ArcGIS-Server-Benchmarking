@@ -1,4 +1,4 @@
-## Setup [Architecture 1](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-1-baseline)
+## Setup [Architecture 1](https://github.com/agrc/ArcGIS-Server-Benchmarking/blob/master/Architectures.md#architecture-1-baseline)
 - [ ] Install `ArcGIS Server` version **10.2.1**
 - [ ] Copy cache tiles local
 - [ ] Publish map service
@@ -8,7 +8,7 @@
 - [ ] Repeat with `ArcGIS Server` version **10.2.2**
 - [ ] Repeat with `ArcGIS Server` version **10.3**
 
-## Setup [Architecture 2](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-2)
+## Setup [Architecture 2](https://github.com/agrc/ArcGIS-Server-Benchmarking/blob/master/Architectures.md#architecture-2)
 - [ ] Acquire `HNAS` and `SAN` storage
 - [ ] Set up shares
 - [ ] Copy cache tiles to `HNAS`
@@ -21,7 +21,7 @@
 - [ ] Repeat with `ArcGIS Server` version **10.2.2**
 - [ ] Repeat with `ArcGIS Server` version **10.3**
 
-## Setup [Architecture 3](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-3)
+## Setup [Architecture 3](https://github.com/agrc/ArcGIS-Server-Benchmarking/blob/master/Architectures.md#architecture-3)
 - [ ] Acquire physical machines
 - [ ] Acquire `SAN` storage
 - [ ] Configure clustered file system
