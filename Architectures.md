@@ -1,6 +1,5 @@
 ## Architecture 1: (Baseline)  
-- Everything is on one machine.  
-- Should produce best results and provide a performance goal.  
+- Everything is on one machine.
 ````
 +------------+           
 |WEB ADAPTER |           
