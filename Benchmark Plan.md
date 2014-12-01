@@ -7,6 +7,7 @@
 - [ ] Commission new machine
 - [ ] Repeat with `ArcGIS Server` version **10.2.2**
 - [ ] Repeat with `ArcGIS Server` version **10.3**
+
 ## Setup [Architecture 2](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-2)
 - [ ] Acquire `HNAS` and `SAN` storage
 - [ ] Set up shares
@@ -19,7 +20,8 @@
 - [ ] Commission new machines
 - [ ] Repeat with `ArcGIS Server` version **10.2.2**
 - [ ] Repeat with `ArcGIS Server` version **10.3**
-- ## Setup [Architecture 3](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-3)
+
+## Setup [Architecture 3](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-3)
 - [ ] Acquire physical machines
 - [ ] Acquire `SAN` storage
 - [ ] Configure clustered file system
