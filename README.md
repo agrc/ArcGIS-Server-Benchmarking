@@ -1,51 +1,33 @@
-## Architecture 1: (Baseline)  
-- Everything is on one machine.  
-- Should produce best results and provide a performance goal.  
-````
-+------------+           
-|WEB ADAPTER |           
-|GIS SERVER  |           
-|           +-----------+
-+------------+          |
-            |   STORAGE |
-            |           |
-            +-----------+
-````
+## Setup [Architecture 1](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-1-baseline)
+- [ ] Install `ArcGIS Server` version **10.2.1**
+- [ ] Copy cache tiles local
+- [ ] Publish map service
+- [ ] Use [wrk scripts](https://github.com/steveoh/wrk) to benchmark `A1`.
+- [ ] Decomission machine 
+- [ ] Commission new machine
+- [ ] Repeat with `ArcGIS Server` version **10.2.2**
+- [ ] Repeat with `ArcGIS Server` version **10.3**
 
-## Architecture 2:  
-- `STORAGE` will be **HNAS** and **SAN**  
-- `STORAGE` will be attached to the `WEB ADAPTER` and _shared_ to the `GIS SERVER`'s via a **UNC** share.
- 
-````
-             +-------+            
-             |STORAGE|            
-             +---+---+            
-                 |                
-                 |                
-           +-----+-----+          
-      +----+WEB ADAPTER+----+     
-      |    +-----------+    |     
-      |                     |     
-      |                     |     
-+-----+----+          +-----+----+
-|GIS SERVER|          |GIS SERVER|
-+----------+          +----------+
-````
+## Setup [Architecture 2](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-2)
+- [ ] Acquire `HNAS` and `SAN` storage
+- [ ] Set up shares
+- [ ] Copy cache tiles to `HNAS`
+- [ ] Copy cache tiles to `SAN`
+- [ ] Publish map service
+- [ ] Install `ArcGIS Server` version **10.2.1**
+- [ ] Use [wrk scripts](https://github.com/steveoh/wrk) to benchmark `A2` with `SAN` and `HNAS` storage.
+- [ ] Decomission machines
+- [ ] Commission new machines
+- [ ] Repeat with `ArcGIS Server` version **10.2.2**
+- [ ] Repeat with `ArcGIS Server` version **10.3**
 
-## Architecture 3:  
-- `STORAGE` will be **clustured file system SAN**
-- `STORAGE` will be directly mounted to the `GIS SERVER`'s
-````
-          +-----------+         
-     +----+WEB ADAPTER+----+    
-     |    +-----------+    |    
-     |                     |    
-+----+-------+    +--------+---+
-|            |    |            |
-| GIS SERVER |    | GIS SERVER |
-|          +---------+         |
-+------------+    +------------+
-           | STORAGE |          
-           |         |          
-           +---------+          
-````
+## Setup [Architecture 3](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-3)
+- [ ] Acquire physical machines
+- [ ] Acquire `SAN` storage
+- [ ] Configure clustered file system
+- [ ] Copy cache tiles to storage
+- [ ] Publish map service
+- [ ] Use [wrk scripts](https://github.com/steveoh/wrk) to benchmark `A3`.
+- [ ] Format machines 
+- [ ] Repeat with `ArcGIS Server` version **10.2.2**
+- [ ] Repeat with `ArcGIS Server` version **10.3**
