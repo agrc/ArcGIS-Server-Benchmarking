@@ -27,7 +27,7 @@
 - [ ] Configure clustered file system
 - [ ] Copy cache tiles to storage
 - [ ] Publish map service
-- [ ] Use [wrk scripts](https://github.com/steveoh/wrk) to benchmark `A1`.
+- [ ] Use [wrk scripts](https://github.com/steveoh/wrk) to benchmark `A3`.
 - [ ] Format machines 
 - [ ] Repeat with `ArcGIS Server` version **10.2.2**
 - [ ] Repeat with `ArcGIS Server` version **10.3**
