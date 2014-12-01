@@ -1,0 +1,4 @@
+- [ ] Setup [Architecture 1](https://github.com/agrc/ArcGIS-Server-Benchmarking#architecture-1-baseline)
+- [ ] Install `ArcGIS Server` version **10.2.1**
+- [ ] Use [wrk scripts](https://github.com/steveoh/wrk) to benchmark `A1`.
+- [ ] 
